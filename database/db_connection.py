@@ -3,7 +3,7 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+
 load_dotenv()
 
 def get_db_connection():
@@ -23,7 +23,6 @@ def get_db_connection():
         return None
 
 
-# Optional test (run this file directly to check connection)
 if __name__ == "__main__":
     connection = get_db_connection()
     if connection:
